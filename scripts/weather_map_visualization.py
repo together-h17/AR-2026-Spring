@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 無法使用，改用 simple_weather_map.py
 """
 氣象站氣溫地圖視覺化腳本
 使用 Folium 在地圖上標示測站位置並依氣溫分色
