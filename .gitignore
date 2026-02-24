@@ -1,0 +1,136 @@
+# 這裡的東西不會上傳
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+
+# Virtual Environment
+.venv
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# QGIS
+*.qgs~
+*.qgz~
+*.qgs~
+*.qgz~
+*.pyc
+.qgis2/
+.qgis3/
+QGIS/
+plugins/
+
+# GIS Data Files
+*.shp
+*.shx
+*.dbf
+*.prj
+*.qpj
+*.cpg
+*.sbx
+*.sbn
+*.aux
+*.xml
+*.tif
+*.tiff
+*.img
+*.jpg
+*.jpeg
+*.png
+*.jp2
+*.kml
+*.kmz
+*.gdb/
+*.mdb
+*.sqlite
+*.gpkg
+*.geojson
+*.json
+
+# Large files and binaries
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.msi
+*.dmg
+
+# Logs
+logs/
+*.log
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+
+# Documentation
+docs/_build/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Data directories (keep structure but ignore contents)
+data/raw/*
+data/processed/*
+data/output/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/output/.gitkeep
+
+# Cache
+.cache/
+cache/
