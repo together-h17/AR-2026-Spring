@@ -110,6 +110,7 @@ htmlcov/
 
 # Documentation
 docs/_build/
+.pdf
 
 # OS generated files
 Thumbs.db
