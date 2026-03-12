@@ -75,7 +75,7 @@ plugins/
 *.img
 *.jpg
 *.jpeg
-*.png
+# *.png
 *.jp2
 *.kml
 *.kmz
@@ -84,7 +84,7 @@ plugins/
 *.sqlite
 *.gpkg
 *.geojson
-*.json
+# *.json
 
 # Large files and binaries
 *.zip
@@ -110,7 +110,7 @@ htmlcov/
 
 # Documentation
 docs/_build/
-.pdf
+*.pdf
 
 # OS generated files
 Thumbs.db
