@@ -84,7 +84,7 @@ plugins/
 *.sqlite
 *.gpkg
 *.geojson
-# *.json
+*.json
 
 # Large files and binaries
 *.zip

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_50fd815825cc05bdc356047b64c9f7ba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_50fd815825cc05bdc356047b64c9f7ba" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_50fd815825cc05bdc356047b64c9f7ba = L.map(
+                "map_50fd815825cc05bdc356047b64c9f7ba",
+                {
+                    center: [23.8, 121.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2a4b857f76667c3bef45020799a6f99a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2a4b857f76667c3bef45020799a6f99a.addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var circle_marker_831ccea50b26bb26f6a65178e5dc2bd9 = L.circleMarker(
+                [23.99, 121.6],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+        var popup_1cd2054232ae1f30b737c2e28590e461 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8661e1fc6823509437e577af8485188b = $(`<div id="html_8661e1fc6823509437e577af8485188b" style="width: 100.0%; height: 100.0%;">Test1: 120.0 mm</div>`)[0];
+                popup_1cd2054232ae1f30b737c2e28590e461.setContent(html_8661e1fc6823509437e577af8485188b);
+            
+        
+
+        circle_marker_831ccea50b26bb26f6a65178e5dc2bd9.bindPopup(popup_1cd2054232ae1f30b737c2e28590e461)
+        ;
+
+        
+    
+    
+            var marker_69f609052b7b8a92e7ec227b609d64fd = L.marker(
+                [24.118015525403624, 121.54304185364984],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_a280c68394b1cd307b810a42f0757681 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f2cac082e1f5282ddb1c6179228c6bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88e635110a48ac5ae418bf11f5b0dc9e = $(`<div id="html_88e635110a48ac5ae418bf11f5b0dc9e" style="width: 100.0%; height: 100.0%;">花蓮市避難收容點1</div>`)[0];
+                popup_1f2cac082e1f5282ddb1c6179228c6bd.setContent(html_88e635110a48ac5ae418bf11f5b0dc9e);
+            
+        
+
+        marker_69f609052b7b8a92e7ec227b609d64fd.bindPopup(popup_1f2cac082e1f5282ddb1c6179228c6bd)
+        ;
+
+        
+    
+    
+                marker_69f609052b7b8a92e7ec227b609d64fd.setIcon(icon_a280c68394b1cd307b810a42f0757681);
+            
+    
+            var marker_ce8c52bd124612a26c53fcf58cb696d5 = L.marker(
+                [24.11261896654862, 121.53711682057455],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_54138d13f36ee0d14a02c09c62197625 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4cf1ef11d5eaefcc058ade656879d53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_778eec83b81a423e43cf954dad04c24c = $(`<div id="html_778eec83b81a423e43cf954dad04c24c" style="width: 100.0%; height: 100.0%;">花蓮市避難收容點2</div>`)[0];
+                popup_a4cf1ef11d5eaefcc058ade656879d53.setContent(html_778eec83b81a423e43cf954dad04c24c);
+            
+        
+
+        marker_ce8c52bd124612a26c53fcf58cb696d5.bindPopup(popup_a4cf1ef11d5eaefcc058ade656879d53)
+        ;
+
+        
+    
+    
+                marker_ce8c52bd124612a26c53fcf58cb696d5.setIcon(icon_54138d13f36ee0d14a02c09c62197625);
+            
+    
+            var marker_dc239fd6355d6a62fcdcf23040f19ad2 = L.marker(
+                [24.069306824163082, 121.52906926403736],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_9b9a7afdd9ff914000be7776921bd923 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef8fc6e0142ad44530102e033801a811 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a32cec648a674dcea69a58c6b52ecd0 = $(`<div id="html_6a32cec648a674dcea69a58c6b52ecd0" style="width: 100.0%; height: 100.0%;">吉安鄉避難收容點1</div>`)[0];
+                popup_ef8fc6e0142ad44530102e033801a811.setContent(html_6a32cec648a674dcea69a58c6b52ecd0);
+            
+        
+
+        marker_dc239fd6355d6a62fcdcf23040f19ad2.bindPopup(popup_ef8fc6e0142ad44530102e033801a811)
+        ;
+
+        
+    
+    
+                marker_dc239fd6355d6a62fcdcf23040f19ad2.setIcon(icon_9b9a7afdd9ff914000be7776921bd923);
+            
+    
+            var marker_207fca43d869a7b50fe550a725602d10 = L.marker(
+                [24.060308044435175, 121.52018254385483],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_3d01af5652f91cb8b56b1b1246931271 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7e4d76a340bb8dc4fdf910643d8d70a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2919e465265afeb97eeb60b0a23bc823 = $(`<div id="html_2919e465265afeb97eeb60b0a23bc823" style="width: 100.0%; height: 100.0%;">吉安鄉避難收容點2</div>`)[0];
+                popup_c7e4d76a340bb8dc4fdf910643d8d70a.setContent(html_2919e465265afeb97eeb60b0a23bc823);
+            
+        
+
+        marker_207fca43d869a7b50fe550a725602d10.bindPopup(popup_c7e4d76a340bb8dc4fdf910643d8d70a)
+        ;
+
+        
+    
+    
+                marker_207fca43d869a7b50fe550a725602d10.setIcon(icon_3d01af5652f91cb8b56b1b1246931271);
+            
+    
+            var marker_71b5ccbc660c40e0710671d68a07a902 = L.marker(
+                [23.941222565989378, 121.48924932805166],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_52b2284e8e1a5c96e4b87287c578d0b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6aed139853720879215578c7af901ca1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9b30b0eca1174f06b9d28380210edc2 = $(`<div id="html_c9b30b0eca1174f06b9d28380210edc2" style="width: 100.0%; height: 100.0%;">壽豐鄉避難收容點1</div>`)[0];
+                popup_6aed139853720879215578c7af901ca1.setContent(html_c9b30b0eca1174f06b9d28380210edc2);
+            
+        
+
+        marker_71b5ccbc660c40e0710671d68a07a902.bindPopup(popup_6aed139853720879215578c7af901ca1)
+        ;
+
+        
+    
+    
+                marker_71b5ccbc660c40e0710671d68a07a902.setIcon(icon_52b2284e8e1a5c96e4b87287c578d0b0);
+            
+    
+            var marker_54dc82a06a82acd571b7b6c0775ef982 = L.marker(
+                [23.92860940086436, 121.48036093550765],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_81b827d14d91d3a4f5c32778a64afc07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8559d74a0199377add99cef05ca95e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72b5f723515429b2b8c923f04ad8e512 = $(`<div id="html_72b5f723515429b2b8c923f04ad8e512" style="width: 100.0%; height: 100.0%;">壽豐鄉避難收容點2</div>`)[0];
+                popup_a8559d74a0199377add99cef05ca95e4.setContent(html_72b5f723515429b2b8c923f04ad8e512);
+            
+        
+
+        marker_54dc82a06a82acd571b7b6c0775ef982.bindPopup(popup_a8559d74a0199377add99cef05ca95e4)
+        ;
+
+        
+    
+    
+                marker_54dc82a06a82acd571b7b6c0775ef982.setIcon(icon_81b827d14d91d3a4f5c32778a64afc07);
+            
+    
+            var marker_ecc2dd1254e92894c87481114df3178e = L.marker(
+                [23.77709196683789, 121.41896963117024],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_b96d94b193908ad5a686fbb18169eb14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_157e3225c9e1125fff8ffebfdfdf818a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2de73d775ebd1d6612026a92b4bda9e6 = $(`<div id="html_2de73d775ebd1d6612026a92b4bda9e6" style="width: 100.0%; height: 100.0%;">鳳林鎮避難收容點1</div>`)[0];
+                popup_157e3225c9e1125fff8ffebfdfdf818a.setContent(html_2de73d775ebd1d6612026a92b4bda9e6);
+            
+        
+
+        marker_ecc2dd1254e92894c87481114df3178e.bindPopup(popup_157e3225c9e1125fff8ffebfdfdf818a)
+        ;
+
+        
+    
+    
+                marker_ecc2dd1254e92894c87481114df3178e.setIcon(icon_b96d94b193908ad5a686fbb18169eb14);
+            
+    
+            var marker_356413a33195ae41da6f3b3d6a53bc63 = L.marker(
+                [23.616497109711414, 121.36553826661083],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_0228cf725052a7deb04d219d44ff1087 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4cd40f93031eab417676fe9cf8533183 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14d2858f08960fabbc276370666f7fad = $(`<div id="html_14d2858f08960fabbc276370666f7fad" style="width: 100.0%; height: 100.0%;">光復鄉避難收容點1</div>`)[0];
+                popup_4cd40f93031eab417676fe9cf8533183.setContent(html_14d2858f08960fabbc276370666f7fad);
+            
+        
+
+        marker_356413a33195ae41da6f3b3d6a53bc63.bindPopup(popup_4cd40f93031eab417676fe9cf8533183)
+        ;
+
+        
+    
+    
+                marker_356413a33195ae41da6f3b3d6a53bc63.setIcon(icon_0228cf725052a7deb04d219d44ff1087);
+            
+    
+            var marker_d1a64d9a974ff61528398f42989f0e9c = L.marker(
+                [23.45134807331525, 121.32005905375655],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_4fe2b04ac572bd035473903a18bd254a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1328a68d25d4f8c2d41abec65f410e34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08d2eae490c4c2b8ebab03caf26cf9b0 = $(`<div id="html_08d2eae490c4c2b8ebab03caf26cf9b0" style="width: 100.0%; height: 100.0%;">瑞穗鄉避難收容點1</div>`)[0];
+                popup_1328a68d25d4f8c2d41abec65f410e34.setContent(html_08d2eae490c4c2b8ebab03caf26cf9b0);
+            
+        
+
+        marker_d1a64d9a974ff61528398f42989f0e9c.bindPopup(popup_1328a68d25d4f8c2d41abec65f410e34)
+        ;
+
+        
+    
+    
+                marker_d1a64d9a974ff61528398f42989f0e9c.setIcon(icon_4fe2b04ac572bd035473903a18bd254a);
+            
+    
+            var marker_b973b4b69cab9bbffa7e0a1314e1aab4 = L.marker(
+                [23.24825712090654, 121.27266298184752],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_3df3ee1eca1889c68d85ef356dd87814 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd5ea5bba5841e9ac683b67a6631cc8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecc42570b61c9809a5fe4b168fb77a43 = $(`<div id="html_ecc42570b61c9809a5fe4b168fb77a43" style="width: 100.0%; height: 100.0%;">玉里鎮避難收容點1</div>`)[0];
+                popup_cd5ea5bba5841e9ac683b67a6631cc8d.setContent(html_ecc42570b61c9809a5fe4b168fb77a43);
+            
+        
+
+        marker_b973b4b69cab9bbffa7e0a1314e1aab4.bindPopup(popup_cd5ea5bba5841e9ac683b67a6631cc8d)
+        ;
+
+        
+    
+    
+                marker_b973b4b69cab9bbffa7e0a1314e1aab4.setIcon(icon_3df3ee1eca1889c68d85ef356dd87814);
+            
+    
+            var marker_b6584ab98798e636a4d9e2737fa41f68 = L.marker(
+                [24.255290439592642, 121.53377522905446],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_c5d82387a4f031f271ec47078ff9d5cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4a6ecf6d3dc95c7c1d9634beafb0553 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f79d5a4d669a8e95b97d8cb502ecb878 = $(`<div id="html_f79d5a4d669a8e95b97d8cb502ecb878" style="width: 100.0%; height: 100.0%;">新城鄉避難收容點1</div>`)[0];
+                popup_d4a6ecf6d3dc95c7c1d9634beafb0553.setContent(html_f79d5a4d669a8e95b97d8cb502ecb878);
+            
+        
+
+        marker_b6584ab98798e636a4d9e2737fa41f68.bindPopup(popup_d4a6ecf6d3dc95c7c1d9634beafb0553)
+        ;
+
+        
+    
+    
+                marker_b6584ab98798e636a4d9e2737fa41f68.setIcon(icon_c5d82387a4f031f271ec47078ff9d5cc);
+            
+    
+            var marker_56ab255e511dda2d7ce536b81be2598a = L.marker(
+                [24.181505464077954, 121.45571264888518],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_a9135fbd2d217fb03b8e515160b98d82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6274d8a92216378043f1335435b62626 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02d6c71abf36a9c519661c05f2d8177c = $(`<div id="html_02d6c71abf36a9c519661c05f2d8177c" style="width: 100.0%; height: 100.0%;">秀林鄉避難收容點1</div>`)[0];
+                popup_6274d8a92216378043f1335435b62626.setContent(html_02d6c71abf36a9c519661c05f2d8177c);
+            
+        
+
+        marker_56ab255e511dda2d7ce536b81be2598a.bindPopup(popup_6274d8a92216378043f1335435b62626)
+        ;
+
+        
+    
+    
+                marker_56ab255e511dda2d7ce536b81be2598a.setIcon(icon_a9135fbd2d217fb03b8e515160b98d82);
+            
+    
+            var marker_ef605fdf5be3db6467a927eabc4e69b0 = L.marker(
+                [23.076727853028476, 121.24205875590197],
+                {
+}
+            ).addTo(map_50fd815825cc05bdc356047b64c9f7ba);
+        
+    
+            var icon_d25c0fc22c31265c9cc855a0abef4bd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90e1c37af3dfba574973236bc299f581 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e095b8f13fb498407c4799095a9d4692 = $(`<div id="html_e095b8f13fb498407c4799095a9d4692" style="width: 100.0%; height: 100.0%;">富里鄉避難收容點1</div>`)[0];
+                popup_90e1c37af3dfba574973236bc299f581.setContent(html_e095b8f13fb498407c4799095a9d4692);
+            
+        
+
+        marker_ef605fdf5be3db6467a927eabc4e69b0.bindPopup(popup_90e1c37af3dfba574973236bc299f581)
+        ;
+
+        
+    
+    
+                marker_ef605fdf5be3db6467a927eabc4e69b0.setIcon(icon_d25c0fc22c31265c9cc855a0abef4bd6);
+            
+</script>
+</html>
