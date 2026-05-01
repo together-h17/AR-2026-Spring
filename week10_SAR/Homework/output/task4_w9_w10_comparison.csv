@@ -1,0 +1,5 @@
+Metric,W9 (Optical Only),W10 (Fused),Improvement
+Total detected flood area,24.817 km²,0.359 km²,-24.457 km²
+Cloud-covered area analyzed,0.000 km²,157.465 km²,SAR enables cloudy-area analysis
+False positives removed by topographic filter,N/A,22.163 km²,terrain-aware audit
+Confidence levels,binary / optical confidence,4-class confidence map,finer granularity

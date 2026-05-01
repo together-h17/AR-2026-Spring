@@ -1,0 +1,2 @@
+SAR threshold (dB),water pixels,flooded area (km²),mean backscatter in flood zone (dB),median filter,minimum component size (px)
+-18.0,20207,2.0207,-19.61581039428711,5×5,50

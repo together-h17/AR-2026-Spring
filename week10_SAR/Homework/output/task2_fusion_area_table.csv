@@ -1,0 +1,5 @@
+class_code,class_name,pixels,area_km2
+0,No Detection,5319238,531.9238
+1,Optical Only — needs review,212188,21.2188
+2,SAR Only (Cloudy) — radar evidence,11188,1.1188
+3,High Confidence — dual evidence,1852,0.1852

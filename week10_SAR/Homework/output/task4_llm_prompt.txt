@@ -1,0 +1,16 @@
+You are an emergency management advisor for Hualien County during Typhoon Fung-wong.
+
+Based on these ARIA v7.0 sensor fusion results, generate a strategic briefing that covers:
+1. Which areas require immediate evacuation?
+2. How should resources be allocated between high-confidence and SAR-only zones?
+3. What are the limitations of the current assessment?
+4. What additional data would improve confidence?
+
+Key metrics:
+- High confidence flood area: 0.029 km²
+- SAR-only (cloudy) flood area: 0.224 km²
+- False positives removed by topographic filter: 22.163 km²
+- Cloud cover percentage: 28.4%
+- SAR threshold: -18.0 dB. This threshold was selected based on the expected low VV backscatter of water; adjust if local water is rough or turbid.
+- NDWI threshold: 0.3. Clear water often uses about 0.3, while turbid water may require about 0.0.
+- Total detected flood area after topographic filtering: 0.359 km²
